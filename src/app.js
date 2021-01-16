@@ -75,10 +75,10 @@ client.on('message', (channel, userstate, message, self) => {
     return
   }
 
-  if (userstate.username === BOT_USERNAME) {
-    console.log(`Not checking bot's messages.`)
-    return
-  }
+//   if (userstate.username === BOT_USERNAME) {
+//     console.log(`Not checking bot's messages.`)
+//     return
+//   }
 
 	if(message.toLowerCase() === '!hello') {
     hello(channel, userstate)
